@@ -33,7 +33,6 @@ class Entry{
     public static Entry[] createEntries(String givers_name, String receivers_name, int amount){
         Entry senders_entry =  new Entry(givers_name, amount, true);
         Entry receiver_entry = new Entry(receivers_name, amount, false);
-        nextId++;
         return new Entry[]{receiver_entry, senders_entry};
     }
 
