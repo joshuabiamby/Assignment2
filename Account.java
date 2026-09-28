@@ -82,9 +82,9 @@ public class Account {
             int balance = amountGiven - amountReceieved;
 
             if(balance > 0){// Owed money
-                statement = statement + this.owner + " owes " + Math.abs(balance) + " to " + party + "\n";
+                statement = statement + party + " owes " + balance + " to " + this.owner + "\n";
             } else if(balance < 0){ //money owed
-                statement = statement + this.owner + " is owed $" + balance + " from " + party + "\n";
+                statement = statement + this.owner + " owes $" + Math.abs(balance) + " to" + party + "\n";
             }
         }
         
