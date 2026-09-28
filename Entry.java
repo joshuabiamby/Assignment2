@@ -17,7 +17,7 @@ class Entry{
         this.counterParty = counterParty;
         this.quantity = quantity;
         this.counterPartyGiving = counterPartyGiving;
-        id = nextId;  
+        id = nextId++;  
     } 
 
     @Override 
